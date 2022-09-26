@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     border: none;
+    font-family: 'Bebas Neue';
 }
 
 body{
@@ -88,4 +89,7 @@ button:hover{
 #texto{
     position: relative;
     margin-top: 15%;
+}
+.hide{
+    display: none;
 }
