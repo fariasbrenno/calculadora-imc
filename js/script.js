@@ -14,9 +14,8 @@ document.querySelector("#btn-calcular").addEventListener("click", function(){
     divResultado.style.display = "block";
 
     let inNome = nome.value;
-    let inAltura = altura.value;
-    let inPeso = peso.value;
+    var inAltura = altura.value;
+    var inPeso = peso.value;
 
-    console.log(calculo(inAltura, inPeso));
-    
-})
+    console.log(inNome + " seu IMC é " + calculo(inAltura, inPeso));    
+});
