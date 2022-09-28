@@ -2,6 +2,7 @@
 let nome = document.querySelector("#input-nome");
 let altura = document.querySelector("#input-altura");
 let peso = document.querySelector("#input-peso");
+let texto = document.querySelector("#texto");
 
 /*Funções*/
 function calculo(a, b){
@@ -14,8 +15,8 @@ document.querySelector("#btn-calcular").addEventListener("click", function(){
     divResultado.style.display = "block";
 
     let inNome = nome.value;
-    var inAltura = altura.value;
-    var inPeso = peso.value;
-
-    console.log(inNome + " seu IMC é " + calculo(inAltura, inPeso));    
+    let inAltura = altura.value;
+    let inPeso = peso.value;
+    
+    texto.append(inNome + " seu IMC é " + calculo(inAltura, inPeso));    
 });
